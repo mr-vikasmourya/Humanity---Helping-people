@@ -1,0 +1,577 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.foo{
+    background-color: rgb(20, 3, 88);
+}
+.footer{
+    /* margin-top: 3rem; */
+    width: 100%;
+}
+.donation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 9vh;
+    width: 100%;
+}
+.con{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:  rgb(20, 3, 88);
+    color: white;
+}
+.con button{
+    margin: 0px 1rem;
+    width: 5rem;
+    height: 2rem;
+    background-color: rgb(188, 65, 13);
+    border: none;
+    color: wheat;
+}
+.con button:hover{
+    width: 5.2rem;
+    height: 2.2rem;
+    background-color: rgb(224, 104, 83);
+}
+.line{
+    width: 80%;
+    height: 1px;
+    background-color: #7f6f6f;
+}
+.footer{
+    background-color: rgb(20, 3, 88);
+     /* border: 2px solid red;  */
+    color: white;
+}
+.foot{
+    width: 100%;
+    height: auto;
+    background-color: rgb(20, 3, 88);
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid goldenrod; */
+    justify-content: space-between;
+}
+.left-content{
+    float: left;
+    width: 30%;
+    margin: 2.7rem 0rem 0rem 2.5rem;
+    /* border: 2px solid red; */
+}
+.middle{
+    /* border: 2px solid greenyellow; */
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2.7rem 0rem 0rem 0rem;
+}
+input[type="email"]{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    width: 17rem;
+    height: 3rem;
+    border-radius: 25px 0 0 25px;
+    padding: 0 1rem;
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+.sub-btn{
+    position: relative;
+    left: -8px;
+    background-color: #fff;
+    border-radius: 0 25px 25px 0;
+    width: 5rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+}
+.sub-btn i:hover{
+    cursor:progress;
+}
+.icon{
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    width: 27%;
+    display: flex;
+    justify-content: space-between;
+}
+.icon a:hover{
+    position: relative;
+    bottom: 3px;
+}
+.middle-content,.middle-content2{
+    width: 30%;
+    /* border: 2px solid red; */
+}
+.middle-content h2,.middle-content2 h2{
+    margin-bottom: 0.5rem;
+}
+.middle-content, .middle-content2{
+    line-height: 1.5rem;
+}
+.middle-content span, .middle-content2 span{
+    display: block;
+}
+.middle-content h2, .middle-content2 h2{
+    display: block;
+}
+.middle-content2 .md-con{
+    display: none;
+}
+.right-content{
+    /* border: 2px solid red; */
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.right h2{
+    margin-bottom: 0.3rem;
+}
+.right-content ul li{
+    margin-left: 1rem;
+    line-height: 1.5rem;
+}
+.right-content ul li a{
+    text-decoration: none;
+    color: white;
+}
+.right ul li:hover{
+    list-style: none;
+    position: relative;
+    bottom: 2px;
+}
+.right ul li a:hover{
+    color: rgb(244, 244, 113);
+    text-decoration:underline ;
+}
+.under-footer{
+    margin-top: 2rem;
+    color: white;
+    width: 100%;
+    height: 4vh;
+    background-color: rgb(55 69 126);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:1500px){
+    .icon{
+        width: 35%;
+    }
+}
+@media (max-width:1402px){
+    .middle{
+        justify-content: space-between;
+        
+    }
+    .middle-content{
+        width: 34% ;
+    }
+}
+@media (min-width:1660px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size:larger;
+    }
+}
+@media (max-width:1260px){
+    .left-content{
+        width: 34%;
+        position: relative;
+        right: 1.5rem;
+    }
+    .middle{
+        width:61%;
+        justify-content: space-between;
+    }
+    .middle-content2{
+        width: 32%;
+    }
+    .right-content{
+        width: 25%;
+    }
+    .icon{
+        width: 33%;
+    }
+    .middle-content{
+        width: 40%;
+    }
+}
+@media (max-width:1176px){
+    .left-content{
+        width: 34%;
+        position: relative;
+        right: 2rem;
+    }
+    .middle{
+        width: 64%;
+    }
+}
+@media (max-width:1145px){
+    .right-content{
+        width: 23%;
+    }
+    .middle-content2{
+        width: 34%;
+    }
+}
+@media (max-width:1105px){
+    .left-content{
+        width: 30%;
+        
+    }
+    .headings{
+        font-size: 1rem;
+    }
+    .middle{
+        width: 70%;
+    }
+    .middle-content2{
+        width: 35%;
+    }
+    .right-content{
+        width: 22%;
+    }
+    input[type="email"]{
+        width: 13rem;
+    }
+    .sub-btn{
+        width: 4rem;
+    }
+    .icon{
+        width: 40%;
+    }
+}
+@media (max-width:1019px){
+    .left-content{
+        width: 43%;
+    }
+    input[type="email"]{
+        width: 16rem;
+    }
+    .middle{
+        width: 56%;
+    }
+    .headings{
+        font-size: 1.5rem;
+    }
+    .middle-content{
+        display: none;
+    }
+    .middle-content2{
+        width: 60%;
+    }
+    .middle-content2 .md-con{
+        display:inline;
+    }
+    .right-content{
+        width: 35%;
+    }
+}
+@media (max-width:888px){
+    .headings{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:820px){
+    input[type="email"]{
+        width: 13rem;
+    }
+}
+@media (max-width:790px){
+    .left-content{
+        width: 43%;
+    }
+    .headings{
+        font-size: 1.1rem;
+    }
+    .middle{
+        width: 62%;
+    }
+    input[type="email"]{
+        width: 12rem;
+    }
+    .middle-content2{
+        width: 60%;
+    }
+    .right-content{
+        width:40%;
+    }
+    .icon{
+        width: 45%;
+    }
+}
+@media (max-width:728px){
+    .foot{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .icon{
+        width: 30%;
+    }
+    .headings{
+        font-size: 1.3rem;
+    }
+    input[type="email"]{
+        width: 17rem;
+    }
+    .con{
+        position: relative;
+        top: 1rem;
+    }
+    .line{
+        position: relative;
+        top: 1rem;
+    }
+    .left-content{
+        width: 70%;
+    }
+    .middle{
+        margin-bottom: 3rem;
+        width: 100%;
+        /* margin-right: 2.5rem; */
+        justify-content: space-evenly;
+    }
+    .middle-content{
+        display: inline;
+        width: 36%;
+    }
+    .middle-content2{
+        width: 37%;
+    }
+    .middle-content2 .md-con{
+        display:none;
+    }
+    .right-content{
+        width: 24%;
+    }
+    .under-footer{
+        margin-top: -2rem;
+    }
+}
+@media (max-width:695px){
+    .donation{
+        height: 16vh;
+        display: flex;
+        justify-content: center;
+    }
+    .con{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        line-height: 2rem;
+    }
+}
+@media (max-width:625px){
+    /* .foot{
+        height: 70vh;
+    } */
+    .left-content{
+        margin-left: 5rem;
+        width: 90%;
+    }
+    .middle{
+        justify-content: space-evenly;
+        position: relative;
+        bottom: 1.5rem;
+    }
+    .middle-content{
+        display: none;
+        width: 0px;
+    }
+    .middle-content2{
+        /* display: none; */
+        width: 60%;
+    }
+    .right-content{
+        width: 30%;
+    }
+    .middle-content2 .md-con{
+        display: inline;
+    }
+}
+@media (max-width:495px){
+    .left-content{
+        justify-content: center;
+    }
+    input[type="email"]{
+        width: 15rem;
+        height: 2.5rem;
+    }
+    .sub-btn{
+        height: 2.5rem;
+
+    }
+    .right-content{
+        width: 35%;
+    }
+    .middle-content2{
+        width: 55%;
+    }
+    .icon{
+        width: 35%;
+    }
+}
+@media (max-width:420px){
+    .headings{
+        font-size: 1.2rem;
+    }
+    .foot{
+        height: auto;
+    }
+    input[type="email"]{
+        width: 16rem;
+        height: 2.5rem;
+    }
+    .icon{
+        width: 38%;
+    }
+    .sub-btn{
+        width: 3rem;
+        height: 2.5rem;
+    }
+    .middle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 40vh;
+        position: relative;
+        bottom: 3rem;
+        margin-bottom: 0rem;
+    }
+    .middle-content2{
+        width: 99%;
+        display: flex;
+        justify-content: center;
+    }
+    .right h2{
+        display: none;
+    }
+    .right ul{
+        width: 100vw;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    }
+    .right ul li a{
+        color: rgb(228, 228, 132);
+    }
+}
+@media(max-width:354px) {
+    .headings{
+        font-size: 1rem;
+    }
+    input[type="email"]{
+        width: 12rem;
+        height: 2rem;
+    }
+    /* .foot{
+        height: 80vh;
+    } */
+    .icon{
+        width: 45%;
+    }
+    .sub-btn{
+        width: 3rem;
+        height: 2rem;
+    }
+
+}
+@media(max-width:307px) {
+    footer{
+        font-size: 0.7rem;
+    }
+    .headings{
+        font-size: 0.8rem;
+    }
+    input[type="email"]{
+        width: 12rem;
+        height: 2rem;
+    }
+    .sub-btn{
+        width: 3rem;
+        height: 2rem;
+    }
+}
+@media(max-width:287px) {
+    input[type="email"]{
+        width: 11rem;
+        height: 1.7rem;
+    }
+    .sub-btn{
+        width: 2rem;
+        height: 1.7rem;
+    }
+    .foot{
+        height: auto;
+    }
+}
+@media(max-width:248px) {
+    input[type="email"]{
+        width: 10rem;
+        height: 1.7rem;
+    }
+}
+@media(max-width:248px) {
+    input[type="email"]{
+        width: 9rem;
+        height: 1.7rem;
+    }
+    .headings{
+        font-size: 0.7rem;
+    }
+    
+}
+@media(max-width:214px) {
+    input[type="email"]{
+        width: 6rem;
+        height: 1.5rem;
+    }
+    .sub-btn{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .headings{
+        font-size: 0.6rem;
+
+    }
+    .footer{
+        font-size: 0.5rem;
+    }
+}
+
+@media(max-width:171px) {
+    footer{
+        font-size: 0.4rem;
+    }
+    .headings{
+        font-size: 0.5rem;
+    }
+}
+@media(max-width:144px) {
+    footer{
+        font-size: 0.3rem;
+    }
+    .headings{
+        font-size: 0.4rem;
+    }
+    input[type="email"]{
+        width: 4rem;
+        height: 1rem;
+    }
+}

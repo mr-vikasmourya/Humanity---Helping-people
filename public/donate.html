@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>donate</title>
+    <link rel="stylesheet" href="/css/donate.css">
+    <link rel="stylesheet" href="/css/donate_nav.css">
+    <link rel="stylesheet" href="/css/donate_footer.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/0f4d961224.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+
+            <div class="nav-links nav-linksAnimat" id="navLinks">
+                <i class="fa " onclick="hideMenu()">&#10006;</i>
+                <ul>
+                    <li> <a href="/index.html">HOME</a></li>
+                    <li> <a href="/donate">DONATE</a></li>
+                    <li> <a href="/blog">BLOG</a></li>
+                    <li id="register"> <a href="/login.html">REGISTER HERE/SIGN IN</a></li>
+                    <li id="demo" onclick="myFunction()"> <a href="/logout">LOG OUT</a></li>
+                </ul>
+            </div>
+            <div class="burgerAnimat container" onclick="showMenu()">
+                <div class="bar1"></div>
+                <div class="bar1"></div>
+                <div class="bar1"></div>
+            </div>
+        </nav>
+    </section>
+    <div class="donate_bg">
+
+    </div>
+    <section id="donation_start">
+        <div class="donation_section">
+            <div class="donate_btn-box">
+                <button id="donate_btn1" onclick="openMedical()">Medical</button>
+                <button id="donate_btn2" onclick="openChildEducation()">child education</button>
+                <button id="donate_btn3" onclick="openOrphonage()">orphonage</button>
+                <button id="donate_btn4" onclick="openAssistive()">assistive device</button>
+                <button id="donate_btn5" onclick="openRelief()">relief fund</button>
+            </div>
+            <div id="donate_content1" class="donate_content">
+                <div class="donate_content-left">
+                    <h1>Your Gift can save lives.</h1>
+                    <h5>Your small donation matters a lot to needy people Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Eius, praesentium laboriosam adipisci iste soluta at amet labore itaque rerum.
+                    </h5>
+                    <div id="gyan">
+                        enter an amount to donate for medical equipments and medical facilities
+                    </div>
+                    <form action="">
+                        <div class="amount">
+                            <label for="Medical_money"></label>
+                            Donation Amount :
+                            <input type="number" name="medical_money" id="medical_money" placeholder="$">
+                        </div>
+                        <div class="check">
+                            <label for="check"></label>
+                            <input type="checkbox" name="check" id="check"> Do you want to receive further notification
+                            for donation!
+                        </div>
+                        <div class="amount_submit_button">
+                            <button>Donate</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="donate_content_right">
+                    <img style="border-radius: 2rem; box-shadow: rgba(66, 6, 6, 0.2) 0px 2px 8px 0px;"
+                        src="donate_images/medical.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam architecto eligendi molestias
+                        provident. Vero quis fugit aut maxime tenetur impedit saepe beatae voluptatem aperiam, vel
+                        corporis
+                        ad deserunt delectus modi, debitis dolore odit accusantium! Sunt, excepturi voluptates expedita
+                        veniam consequuntur unde nesciunt debitis voluptas id.</p>
+                </div>
+            </div>
+            <div id="donate_content2" class="donate_content">
+                <div class="donate_content-left">
+                    <h1>Your small initiation can eduacate many childrens</h1>
+                    <h5>Your small donation matters a lot to needy people Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Eius, praesentium laboriosam adipisci iste soluta at amet labore itaque rerum.
+                    </h5>
+                    <div id="gyan">
+                        enter an amount to donate for child education purpose
+                    </div>
+                    <form action="">
+                        <div class="amount">
+                            <label for="child-education"></label>
+                            Donation Amount :
+                            <input type="number" name="child-education" id="child-education" placeholder="$">
+                        </div>
+                        <div class="check">
+                            <label for="check"></label>
+                            <input type="checkbox" name="check" id="check"> Do you want to receive further notification
+                            for donation!
+                        </div>
+                        <div class="amount_submit_button">
+                            <button>Donate</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="donate_content_right">
+                    <img style="border-radius: 2rem; box-shadow: rgba(66, 6, 6, 0.2) 0px 2px 8px 0px;"
+                        src="donate_images/child_education.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam architecto eligendi molestias
+                        provident. Vero quis fugit aut maxime tenetur impedit saepe beatae voluptatem aperiam, vel
+                        corporis
+                        ad deserunt delectus modi, debitis dolore odit accusantium! Sunt, excepturi voluptates expedita
+                        veniam consequuntur unde nesciunt debitis voluptas id.</p>
+                </div>
+            </div>
+            <div id="donate_content3" class="donate_content">
+                <div class="donate_content-left">
+                    <h1>Your small donation give home to many orphan children</h1>
+                    <h5>Your small donation matters a lot to needy people Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Eius, praesentium laboriosam adipisci iste soluta at amet labore itaque rerum.
+                    </h5>
+                    <div id="gyan">
+                        Not all of us can do great things but together we can do..
+                    </div>
+                    <form action="">
+                        <div class="amount">
+                            <label for="Medical_money"></label>
+                            Donation Amount :
+                            <input type="number" name="medical_money" id="medical_money" placeholder="$">
+                        </div>
+                        <div class="check">
+                            <label for="check"></label>
+                            <input type="checkbox" name="check" id="check"> Do you want to receive further notification
+                            for donation!
+                        </div>
+                        <div class="amount_submit_button">
+                            <button>Donate</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="donate_content_right">
+                    <img style="border-radius: 2rem; box-shadow: rgba(66, 6, 6, 0.2) 0px 2px 8px 0px;"
+                        src="donate_images/orphan.avif" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam architecto eligendi molestias
+                        provident. Vero quis fugit aut maxime tenetur impedit saepe beatae voluptatem aperiam, vel
+                        corporis
+                        ad deserunt delectus modi, debitis dolore odit accusantium! Sunt, excepturi voluptates expedita
+                        veniam consequuntur unde nesciunt debitis voluptas id.</p>
+                </div>
+            </div>
+            <div id="donate_content4" class="donate_content">
+                <div class="donate_content-left">
+                    <h1>You can make walk to disabled person</h1>
+                    <h5>Your small donation matters a lot to needy people Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Eius, praesentium laboriosam adipisci iste soluta at amet labore itaque rerum.
+                    </h5>
+                    <div id="gyan">
+                        you can make people enjoy the beauty of world!
+                    </div>
+                    <form action="">
+                        <div class="amount">
+                            <label for="Medical_money"></label>
+                            Donation Amount :
+                            <input type="number" name="medical_money" id="medical_money" placeholder="$">
+                        </div>
+                        <div class="check">
+                            <label for="check"></label>
+                            <input type="checkbox" name="check" id="check"> Do you want to receive further notification
+                            for donation!
+                        </div>
+                        <div class="amount_submit_button">
+                            <button>Donate</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="donate_content_right">
+                    <img style="border-radius: 2rem; box-shadow: rgba(66, 6, 6, 0.2) 0px 2px 8px 0px;"
+                        src="donate_images/assistive.avif" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam architecto eligendi molestias
+                        provident. Vero quis fugit aut maxime tenetur impedit saepe beatae voluptatem aperiam, vel
+                        corporis
+                        ad deserunt delectus modi, debitis dolore odit accusantium! Sunt, excepturi voluptates expedita
+                        veniam consequuntur unde nesciunt debitis voluptas id.</p>
+                </div>
+            </div>
+            <div id="donate_content5" class="donate_content">
+                <div class="donate_content-left">
+                    <h1>You Can Help many disaster affected person with a small donation</h1>
+                    <h5>Your small donation matters a lot to needy people Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Eius, praesentium laboriosam adipisci iste soluta at amet labore itaque rerum.
+                    </h5>
+                    <div id="gyan">
+                        participate in the fundraiser activity with the "HUMANITY"..
+                    </div>
+                    <form action="">
+                        <div class="amount">
+                            <label for="Medical_money"></label>
+                            Donation Amount :
+                            <input type="number" name="medical_money" id="medical_money" placeholder="$">
+                        </div>
+                        <div class="check">
+                            <label for="check"></label>
+                            <input type="checkbox" name="check" id="check"> Do you want to receive further notification
+                            for donation!
+                        </div>
+                        <div class="amount_submit_button">
+                            <button>Donate</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="donate_content_right">
+                    <img style="border-radius: 2rem; box-shadow: rgba(66, 6, 6, 0.2) 0px 2px 8px 0px;"
+                        src="donate_images/relliefbg.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam architecto eligendi molestias
+                        provident. Vero quis fugit aut maxime tenetur impedit saepe beatae voluptatem aperiam, vel
+                        corporis
+                        ad deserunt delectus modi, debitis dolore odit accusantium! Sunt, excepturi voluptates expedita
+                        veniam consequuntur unde nesciunt debitis voluptas id.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="donation">
+            <div class="con">
+                <h4>Together we can remove the hunger and make millions of faces smile!!</h4>
+                <button>Donate</button>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="foo">
+            <div class="foot">
+                <div class="left-content">
+                    <div class="info">
+                        <form action="">
+                            <label for="email">
+                                <h2 class="headings">Stay Informed on every event</h2>
+                            </label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                            <button type="submit" class="sub-btn"><span style=" color: Dodgerblue;"><i
+                                        class="fa-solid fa-circle-right fa-2xl "></i></span></button>
+                        </form>
+                    </div>
+                    <div class="icon">
+                        <a href=""><i style="color: #1DA1F2;filter:brightness(2); "
+                                class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a href=""><i style="color: #3b5998;filter:brightness(3);"
+                                class="fa-brands fa-facebook fa-xl"></i></a>
+                        <a href="https://www.instagram.com/?next=%2F" target="__blank"><i
+                                style="color: #E1306C;filter:brightness(2);"
+                                class="fa-brands fa-instagram fa-xl"></i></a>
+                        <a href=""><i style="color: #c4302b ;filter:brightness(1);"
+                                class="fa-brands fa-youtube fa-xl"></i></a>
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="middle-content">
+                        <h2 class="headings">contact address</h2>
+                        <span>"HUMANITY" Helping people</span>
+                        <span>Babulal nagar,palda,Indore</span>
+                        <span>MP,India</span>
+                    </div>
+                    <div class="middle-content2">
+                        <div class="new">
+                            <h2 class="headings">contact details</h2>
+                            <span><i class="fa-solid fa-mobile"></i> +916263063271</span>
+                            <span><i class="fa-brands fa-whatsapp"></i> +916261778564</span>
+                            <span><i class="fa-solid fa-envelope"></i> humanity124@gmail.com</span>
+                            <div class="md-con">
+                                <span>"HUMANITY" Helping people</span>
+                                <span>Babulal nagar,palda,Indore</span>
+                                <span>MP,India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <div class="right">
+                            <h2 class="headings">useful links</h2>
+                            <ul>
+                                <li><a href="">Our story</a></li>
+                                <li><a href="">Our team</a></li>
+                                <li><a href="">Our Mission</a></li>
+                                <li><a href="">Privacy policies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="under-footer">
+            <i class="fa-regular fa-copyright"></i> 2022 Humanity. all Right reserved
+        </div>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "-20px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-180px";
+        }
+        var donation_start = document.getElementById("donation_start");
+        var donate_content1 = document.getElementById("donate_content1");
+        var donate_content2 = document.getElementById("donate_content2");
+        var donate_content3 = document.getElementById("donate_content3");
+        var donate_content4 = document.getElementById("donate_content4");
+        var donate_content5 = document.getElementById("donate_content5");
+        var donate_btn1 = document.getElementById("donate_btn1");
+        var donate_btn2 = document.getElementById("donate_btn2");
+        var donate_btn3 = document.getElementById("donate_btn3");
+        var donate_btn4 = document.getElementById("donate_btn4");
+        var donate_btn5 = document.getElementById("donate_btn5");
+        function openMedical() {
+            donation_start.style.background = "linear-gradient(rgb(208 210 222 / 70%),rgb(155 156 160 / 70%)), url(donate_images/medicalbg.avif) center/ cover no-repeat"
+            donate_content1.style.transform = "translateX(0)"
+            donate_content2.style.transform = "translateX(100%)"
+            donate_content3.style.transform = "translateX(100%)"
+            donate_content4.style.transform = "translateX(100%)"
+            donate_content5.style.transform = "translateX(100%)"
+            donate_btn1.style.color = "#ff7846"
+            donate_btn2.style.color = "#000"
+            donate_btn3.style.color = "#000"
+            donate_btn4.style.color = "#000"
+            donate_btn5.style.color = "#000"
+            donate_content1.style.transitionDelay = "0.3s"
+            donate_content2.style.transitionDelay = "0s"
+            donate_content3.style.transitionDelay = "0s"
+            donate_content4.style.transitionDelay = "0s"
+            donate_content5.style.transitionDelay = "0s"
+        }
+        function openChildEducation() {
+            donation_start.style.background = "linear-gradient(rgb(208 210 222 / 70%),rgb(155 156 160 / 70%)), url(donate_images/child_educationbg.jpg) center/ cover no-repeat"
+            donate_content1.style.transform = "translateX(100%)"
+            donate_content2.style.transform = "translateX(0)"
+            donate_content3.style.transform = "translateX(100%)"
+            donate_content4.style.transform = "translateX(100%)"
+            donate_content5.style.transform = "translateX(100%)"
+            donate_btn1.style.color = "#000"
+            donate_btn2.style.color = "#ff7846"
+            donate_btn3.style.color = "#000"
+            donate_btn4.style.color = "#000"
+            donate_btn5.style.color = "#000"
+            donate_content1.style.transitionDelay = "0s"
+            donate_content2.style.transitionDelay = "0.3s"
+            donate_content3.style.transitionDelay = "0s"
+            donate_content4.style.transitionDelay = "0s"
+            donate_content5.style.transitionDelay = "0s"
+        }
+        function openOrphonage() {
+            donation_start.style.background = "linear-gradient(rgb(208 210 222 / 70%),rgb(155 156 160 / 70%)), url(donate_images/orphanbg.avif) center/ cover no-repeat"
+            donate_content1.style.transform = "translateX(100%)"
+            donate_content2.style.transform = "translateX(100%)"
+            donate_content3.style.transform = "translateX(0)"
+            donate_content4.style.transform = "translateX(100%)"
+            donate_content5.style.transform = "translateX(100%)"
+            donate_btn1.style.color = "#000"
+            donate_btn2.style.color = "#000"
+            donate_btn3.style.color = "#ff7846"
+            donate_btn4.style.color = "#000"
+            donate_btn5.style.color = "#000"
+            donate_content1.style.transitionDelay = "0s"
+            donate_content2.style.transitionDelay = "0s"
+            donate_content3.style.transitionDelay = "0.3s"
+            donate_content4.style.transitionDelay = "0s"
+            donate_content5.style.transitionDelay = "0s"
+        }
+        function openAssistive() {
+            donation_start.style.background = "linear-gradient(rgb(208 210 222 / 70%),rgb(155 156 160 / 70%)), url(donate_images/assistivebg.avif) center/ cover no-repeat"
+            donate_content1.style.transform = "translateX(100%)"
+            donate_content2.style.transform = "translateX(100%)"
+            donate_content3.style.transform = "translateX(100%)"
+            donate_content4.style.transform = "translateX(0)"
+            donate_content5.style.transform = "translateX(100%)"
+            donate_btn1.style.color = "#000"
+            donate_btn2.style.color = "#000"
+            donate_btn3.style.color = "#000"
+            donate_btn4.style.color = "#ff7846"
+            donate_btn5.style.color = "#000"
+            donate_content1.style.transitionDelay = "0s"
+            donate_content2.style.transitionDelay = "0s"
+            donate_content3.style.transitionDelay = "0s"
+            donate_content4.style.transitionDelay = "0.3s"
+            donate_content5.style.transitionDelay = "0s"
+        }
+        function openRelief() {
+            donation_start.style.background = "linear-gradient(rgb(208 210 222 / 70%),rgb(155 156 160 / 70%)), url(donate_images/relief.avif) center/ cover no-repeat"
+            donate_content1.style.transform = "translateX(100%)"
+            donate_content2.style.transform = "translateX(100%)"
+            donate_content3.style.transform = "translateX(100%)"
+            donate_content4.style.transform = "translateX(100%)"
+            donate_content5.style.transform = "translateX(0)"
+            donate_btn1.style.color = "#000"
+            donate_btn2.style.color = "#000"
+            donate_btn3.style.color = "#000"
+            donate_btn4.style.color = "#000"
+            donate_btn5.style.color = "#ff7846"
+            donate_content1.style.transitionDelay = "0s"
+            donate_content2.style.transitionDelay = "0s"
+            donate_content3.style.transitionDelay = "0s"
+            donate_content4.style.transitionDelay = "0s"
+            donate_content5.style.transitionDelay = "0.3s"
+        }
+
+    </script>
+
+</body>
+
+</html>

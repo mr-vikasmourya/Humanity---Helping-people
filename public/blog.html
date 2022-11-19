@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OurBlog</title>
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/Blogwhy.css">
+    <link rel="stylesheet" href="/css/BlogNav.css">
+    <link rel="stylesheet" href="/css/Blogfooter.css">
+    <script src="https://kit.fontawesome.com/0f4d961224.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+
+            <div class="nav-links nav-linksAnimat" id="navLinks">
+                <i class="fa " onclick="hideMenu()">&#10006;</i>
+                <!-- <ul>
+                    <li> <a href="/index.html">HOME</a></li>
+                    <li> <a href="/about.html">DONATE</a></li>
+                    <li> <a href="/Gallery.html">BLOG</a></li>
+                    <li id="register"> <a href="/login.html">REGISTER/SIGN IN</a></li>
+                </ul> -->
+                <ul>
+                    <li> <a href="/index.html">HOME</a></li>
+                    <li> <a href="/donate">DONATE</a></li>
+                    <li> <a href="/blog">BLOG</a></li>
+                    <li id="register"> <a href="/login.html">REGISTER HERE/SIGN IN</a></li>
+                    <li id="demo" onclick="myFunction()"> <a href="/logout">LOG OUT</a></li>
+
+                </ul>
+            </div>
+            <div class="burgerAnimat container" onclick="showMenu()">
+                <div class="bar1"></div>
+                <div class="bar1"></div>
+                <div class="bar1"></div>
+            </div>
+        </nav>
+    </section>
+    <section id="vlog-header">
+        <div class="vlog-swiper vlog-mySwiper vlog-container">
+            <div class="swiper-wrapper content">
+
+                <div class="swiper-slide vlog-card">
+                    <div class="vlog-card-content" id="vlog-card-content1">
+                    </div>
+                </div>
+                <div class="swiper-slide vlog-card">
+                    <div class="vlog-card-content" id="vlog-card-content2">
+                        <img src="images/slide2.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="swiper-slide vlog-card">
+                    <div class="vlog-card-content" id="vlog-card-content3">
+                        <!-- <img src="people-standing.jpg" alt="" srcset=""> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </section>
+
+    <!-- /**************humanity***********************/ -->
+    <section class="humanity">
+        <h1 class="humanity-heading">Humanity</h1>
+        <div class="humanity-content">
+            <div class="hum-image"><img src="images/wheat.jpg" alt=""></div>
+            <p>Lorem ipsum dolor sit amet ctetur adip elit. ibus soluta tene iores non vel dolorum commodi, dolorem
+                placeat dign laborum vero sint nemo, ratione iure odio assumenda excepturi est prium, endis iste officia
+                voluptatem! Quas non ex doloremque? Nemo incidunt necessitatibus tenetur illum eos doloribus! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Similique at fuga, eos non obcaecati, aspernatur
+                optio blanditiis, dolorem delectus repudiandae ex sint illum?</p>
+        </div>
+    </section>
+    <!-- /**********mediator-image**********************/ -->
+    <div class="mediator-image">
+        <img src="images/mediator-image.jpg" alt="">
+    </div>
+    <!-- /**************Our vision***********************/ -->
+    <section class="vision">
+        <h1 class="vision-heading">Our Vision</h1>
+        <div class="vision-content">
+            <div class="vis-image"><img src="images/people-standing.png" alt=""></div>
+            <p>Lorem ipsum dolor sit amet ctetur adip elit. ibus soluta tene iores non vel dolorum commodi, dolorem
+                placeat dign laborum vero sint nemo, ratione iure odio assumenda excepturi est prium, endis iste officia
+                voluptatem! Quas non ex doloremque? Nemo incidunt necessitatibus tenetur illum eos doloribus! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Similique at fuga, eos non obcaecati, aspernatur
+                optio blanditiis, dolorem delectus repudiandae ex sint illum?</p>
+        </div>
+    </section>
+    </div>
+    <!-- /******************why choose us***************/ -->
+    <section class="human_development">
+        <div class="human_development-content">
+            <h1 class="human_development-heading">social work service Division</h1>
+            <div class="human-image"><img src="images/Human_Development.jpg" alt=""></div>
+            <p>Lorem ipsum dolor sit amet ctetur adip elit. ibus soluta tene iores non vel dolorum commodi, dolorem
+                placeat dign laborum vero sint nemo, ratione iure odio assumenda excepturi est prium, endis iste officia
+                voluptatem! Quas non ex doloremque? Nemo incidunt necessitatibus tenetur illum eos doloribus! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Similique at fuga, eos non obcaecati, aspernatur
+                optio blanditiis, dolorem delectus repudiandae ex sint illum?</p>
+        </div>
+    </section>
+    <section class="why-us">
+        <div class="why-choose-us">
+            <div class="why-heading">
+                <h3>"Humanity" Helping people</h3>
+                <h1>Why Choose us?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam facilis quam minima deleniti!
+                    Cumque non molestias, eveniet quasi corporis aspernatur voluptates harum, iure tempora aliquam eius
+                    optio officia am fugiat distinctio vitae optio nobis maxime sequi, suscipit reiciendis! Quam non
+                    nihil reiciendis aliquam fugit?</p>
+            </div>
+            <div class="why-cards">
+                <div class="two-card">
+                    <div class="why-card" id="why-card1">
+                        <div class="why-image">
+                            <img src="images/computerized.png" alt="">
+                        </div>
+                        <div class="why-content">
+                            <h2>Computerized System</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum impedit maxime eligendi
+                                beatae. Porro et exercitationem, modi, voluptas sint voluptatem praesentium perspiciatis
+                                quos assumend Lorem ipsum dolor sit. lorem</p>
+                        </div>
+                    </div>
+                    <div class="why-card" id="why-card2">
+                        <div class="why-image"><img style="width: 6rem; height:6rem" src="images/easily-accessible.png"
+                                alt=""></div>
+                        <div class="why-content">
+                            <h2>Easily accessible</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum impedit maxime eligendi
+                                beatae. Porro et exercitationem, modi, vtas sint atem praesentium perspiciatis
+                                quos assumend Lorem ipsum dolor sit. lorem</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="why-card" id="why-card3">
+                    <div class="why-image"><img src="images/secure.jpg" alt=""></div>
+                    <div class="why-content">
+                        <h2>Secure & reliable</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum impedit maxime eligendi
+                            beatae. Porro et exercitationem, modi, voluptas sint voluptatem praesentium perspiciatis
+                            quos assumend Lorem ipsum dolor sit. lorem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /**************************footer***********************/ -->
+    <section class="footer">
+        <div class="donation">
+            <div class="con">
+                <h4>Together we can remove the hunger and make millions of faces smile!!</h4>
+                <button>Donate</button>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="foo">
+            <div class="foot">
+                <div class="left-content">
+                    <div class="info">
+                        <form action="">
+                            <label for="email">
+                                <h2 class="headings">Stay Informed on every event</h2>
+                            </label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                            <button type="submit" class="sub-btn"><span style=" color: Dodgerblue;"><i
+                                        class="fa-solid fa-circle-right fa-2xl "></i></span></button>
+                        </form>
+                    </div>
+                    <div class="icon">
+                        <a href=""><i style="color: #1DA1F2;filter:brightness(2); "
+                                class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a href=""><i style="color: #3b5998;filter:brightness(3);"
+                                class="fa-brands fa-facebook fa-xl"></i></a>
+                        <a href="https://www.instagram.com/?next=%2F" target="__blank"><i
+                                style="color: #E1306C;filter:brightness(2);"
+                                class="fa-brands fa-instagram fa-xl"></i></a>
+                        <a href=""><i style="color: #c4302b ;filter:brightness(1);"
+                                class="fa-brands fa-youtube fa-xl"></i></a>
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="middle-content">
+                        <h2 class="headings">contact address</h2>
+                        <span>"HUMANITY" Helping people</span>
+                        <span>Babulal nagar,palda,Indore</span>
+                        <span>MP,India</span>
+                    </div>
+                    <div class="middle-content2">
+                        <div class="new">
+                            <h2 class="headings">contact details</h2>
+                            <span><i class="fa-solid fa-mobile"></i> +916263063271</span>
+                            <span><i class="fa-brands fa-whatsapp"></i> +916261778564</span>
+                            <span><i class="fa-solid fa-envelope"></i> humanity124@gmail.com</span>
+                            <div class="md-con">
+                                <span>"HUMANITY" Helping people</span>
+                                <span>Babulal nagar,palda,Indore</span>
+                                <span>MP,India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <div class="right">
+                            <h2 class="headings">useful links</h2>
+                            <ul>
+                                <li><a href="">Our story</a></li>
+                                <li><a href="">Our team</a></li>
+                                <li><a href="">Our Mission</a></li>
+                                <li><a href="">Privacy policies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="under-footer">
+            <i class="fa-regular fa-copyright"></i> 2022 Humanity. all Right reserved
+        </div>
+    </section>
+
+
+
+    <!-- script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".vlog-mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            //loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            parallax: true,
+            autoplay: {
+                delay: 1000,
+            },
+            reset: true,
+            speed: 800,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplayDisableOnInteraction: false
+        });
+
+    </script>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-160px";
+        }
+
+    </script>
+    <!-- /************auto reveal while scrolling***************/ -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        //common reveal options to create reveal animations
+        ScrollReveal({
+            //reset: true,
+            distance: '60px',
+            duration: 1000,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.nav-links', { delay: 20, origin: 'top', reset: true });
+        ScrollReveal().reveal('.humanity', { delay: 80, origin: 'top', reset: true });
+        ScrollReveal().reveal('.mediator-image', { delay: 100, origin: 'bottom', reset: true });
+        ScrollReveal().reveal('.vision', { delay: 150, origin: 'top', reset: true });
+        ScrollReveal().reveal('.why-us', { delay: 350, origin: 'top', reset: true });
+        ScrollReveal().reveal('.why-heading', { delay: 100, origin: 'top', reset: true });
+        ScrollReveal().reveal('.why-card', { delay: 200, origin: 'top', reset: true });
+        ScrollReveal().reveal('.footer', { delay: 400, duration: 1500, reset: true, scale: 0.71 });
+        ScrollReveal().reveal('input[type="email"],.sub-btn', { delay: 200, origin: 'top', distance: '100px', reset: true, scale: 0.9 });
+        ScrollReveal().reveal('.con button', { delay: 230, reset: true, scale: 0.85 });
+        ScrollReveal().reveal('.icon a', { delay: 100, origin: 'top', distance: '100px', reset: true, scale: 0.9 });
+    </script>
+</body>
+
+</html>

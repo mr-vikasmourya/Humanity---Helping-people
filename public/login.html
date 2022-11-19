@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/loginNav.css">
+    <link rel="stylesheet" href="/css/loginFooter.css">
+    <script src="https://kit.fontawesome.com/0f4d961224.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+
+            <div class="nav-links nav-linksAnimat" id="navLinks">
+                <i class="fa " onclick="hideMenu()">&#10006;</i>
+                <ul>
+                    <li> <a href="/index.html">HOME</a></li>
+                    <li> <a href="/donate">DONATE</a></li>
+                    <li> <a href="/blog">BLOG</a></li>
+                    <li id="register"> <a href="/login.html">REGISTER HERE/SIGN IN</a></li>
+                    <li id="demo" onclick="myFunction()"> <a href="/logout">LOG OUT</a></li>
+                </ul>
+            </div>
+            <div class="burgerAnimat container" onclick="showMenu()">
+                <div class="bar1"></div>
+                <div class="bar1"></div>
+                <div class="bar1"></div>
+            </div>
+        </nav>
+    </section>
+    <div class="login-container">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>LOGIN</h2>
+                    <form action="/login" method="post">
+                        <input type="email" class="input-box" placeholder="Your Email id" name="email" required>
+                        <input type="password" class="input-box" placeholder="Password" name="password" required>
+                        <button type="submit" onclick="myAlertFuncLogin()" class="submit-btn">Submit</button>
+                        <input type="checkbox"> <span>Remember Me</span>
+                        <button type="submit"  class="btn" onclick="openRegister()">I am New Here</button>
+                        <a href="">Forgot Password</a>
+                    </form>
+                </div>
+                <div class="card-back">
+                    <h2>REGISTRATION</h2>
+                    <form action="/register" method="post">
+                        <input type="text" class="input-box" placeholder="Your Name" name="name" required>
+                        <input type="email" class="input-box" placeholder="Your Email id" name="email" required>
+                        <input type="password" class="input-box" placeholder="Password" name="password" required>
+                        <input type="password" class="input-box" placeholder="Confirm Password" name="confirmpassword"
+                            required>
+                        <button type="submit" onclick="myAlertFuncRegister()" class="submit-btn">Submit</button>
+                        <input type="checkbox"> <span>Remember Me</span>
+                        <button type="submit" class="btn" onclick="openLogin()">I have an account</button>
+                        <a href="">Forgot Password</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="donation">
+            <div class="con">
+                <h4>Together we can remove the hunger and make millions of faces smile!!</h4>
+                <button>Donate</button>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="foo">
+            <div class="foot">
+                <div class="left-content">
+                    <div class="info">
+                        <form action="">
+                            <label for="email">
+                                <h2 class="headings">Stay Informed on every event</h2>
+                            </label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                            <button type="submit" class="sub-btn"><span style=" color: Dodgerblue;"><i
+                                        class="fa-solid fa-circle-right fa-2xl "></i></span></button>
+                        </form>
+                    </div>
+                    <div class="icon">
+                        <a href=""><i style="color: #1DA1F2;filter:brightness(2); "
+                                class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a href=""><i style="color: #3b5998;filter:brightness(3);"
+                                class="fa-brands fa-facebook fa-xl"></i></a>
+                        <a href="https://www.instagram.com/?next=%2F" target="__blank"><i
+                                style="color: #E1306C;filter:brightness(2);"
+                                class="fa-brands fa-instagram fa-xl"></i></a>
+                        <a href=""><i style="color: #c4302b ;filter:brightness(1);"
+                                class="fa-brands fa-youtube fa-xl"></i></a>
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="middle-content">
+                        <h2 class="headings">contact address</h2>
+                        <span>"HUMANITY" Helping people</span>
+                        <span>Babulal nagar,palda,Indore</span>
+                        <span>MP,India</span>
+                    </div>
+                    <div class="middle-content2">
+                        <div class="new">
+                            <h2 class="headings">contact details</h2>
+                            <span><i class="fa-solid fa-mobile"></i> +916263063271</span>
+                            <span><i class="fa-brands fa-whatsapp"></i> +916261778564</span>
+                            <span><i class="fa-solid fa-envelope"></i> humanity124@gmail.com</span>
+                            <div class="md-con">
+                                <span>"HUMANITY" Helping people</span>
+                                <span>Babulal nagar,palda,Indore</span>
+                                <span>MP,India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <div class="right">
+                            <h2 class="headings">useful links</h2>
+                            <ul>
+                                <li><a href="">Our story</a></li>
+                                <li><a href="">Our team</a></li>
+                                <li><a href="">Our Mission</a></li>
+                                <li><a href="">Privacy policies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="under-footer">
+            <i class="fa-regular fa-copyright"></i> 2022 Humanity. all Right reserved
+        </div>
+    </section>
+
+    <script>
+
+        var card = document.getElementById("card");
+        function myAlertFuncLogin(){
+            alert("Login Successfully");
+        }
+        function myAlertFuncRegister(){
+            alert("Your Registered Succesfully");
+        }
+        function openRegister() {
+            card.style.transform = "rotateY(-180deg)";
+        }
+        function openLogin() {
+            card.style.transform = "rotateY(0deg)";
+        }
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "-20px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-180px";
+        }
+    </script>
+</body>
+
+</html>

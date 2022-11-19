@@ -1,0 +1,117 @@
+.header{
+    height: 9vh;
+    width: 100%;
+    background-color: rgb(21 141 170);
+    /* margin-bottom: 0.4rem; */
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (min-width:700px) {
+    #register{
+        background-color: orangered;
+        border-radius: 5rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    #register:hover{
+        background-color: white;
+        transition: all 1s ;
+    }
+    #register:hover a{
+        color: orangered;
+        transition: all 1s ;
+    }
+}
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a:hover{
+    color: orangered;
+    font-weight: bold;
+    position: relative;
+    bottom: 1px;
+    right: 1px;
+    transition: all 0.5s;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    
+}
+nav .fa{
+    display: none;
+}
+@media (max-width:700px) {
+    .nav-links ul li{
+        display: inline-block;
+    }
+
+    nav img{
+        width: 150px;
+    }
+    .nav-links{
+        position: fixed;
+        background: #304cee;
+        height: 100vh;
+        width: 160px;
+        top: 0;
+        right: -180px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa{
+        display: block;
+        color:#fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;    
+    }
+
+    .nav-links ul{
+        padding: 25px;
+    }
+
+    .container{
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .burgerAnimat{
+        margin-left: 0.5rem;
+        animation: moveright 1s linear 1;
+        animation-delay: 2s;
+        /* visibility: hidden; */
+        animation-fill-mode: forwards;
+    }
+
+    .bar1, .bar2, .bar3{
+        width: 28px;
+        height: 4px;
+        background-color: white;
+        margin: 6px 0;
+        
+    }
+}
